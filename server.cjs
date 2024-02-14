@@ -58,7 +58,7 @@ app.post('/add-restaurant',async function(request,response){
         })
     }
   })
-// delete process in the code
+// delete process 
   app.delete('/delete-restaurant-detail/:id', async function(request, response) {
     try {
         const restaurant = await Restaurant.findById(request.params.id)
